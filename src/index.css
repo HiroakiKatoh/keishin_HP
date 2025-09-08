@@ -45,3 +45,8 @@
   position: relative;
   z-index: 3;
 }
+
+/* 手書き風フォント */
+.font-handwriting {
+  font-family: 'Kalam', cursive;
+}

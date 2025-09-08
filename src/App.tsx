@@ -79,36 +79,10 @@ const App = () => {
     }
   ];
 
-  const teamMembers = [
-    {
-      name: "田中 太郎",
-      position: "代表取締役社長",
-      description: "駐車場業界20年の経験を持つエキスパート。お客様の成功を第一に考えたサービスを提供します。",
-      image: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "佐藤 花子",
-      position: "技術開発部長",
-      description: "最新技術を駆使した駐車場システムの開発を担当。革新的なソリューションを生み出します。",
-      image: "https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "山田 一郎",
-      position: "営業部長",
-      description: "お客様との信頼関係を大切に、最適なソリューションをご提案いたします。",
-      image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-    },
-    {
-      name: "鈴木 美咲",
-      position: "システムエンジニア",
-      description: "駐車場管理システムの設計・開発を担当。お客様のニーズに合わせたカスタマイズを実現。",
-      image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400"
-    }
-  ];
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage services={services} teamMembers={teamMembers} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} activeSection={activeSection} scrollToSection={scrollToSection} />} />
+      <Route path="/" element={<HomePage services={services} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} activeSection={activeSection} scrollToSection={scrollToSection} />} />
       <Route path="/lion-park" element={<LionPark />} />
       <Route path="/parking-equipment" element={<ParkingEquipment />} />
       <Route path="/emergency-system" element={<EmergencySystem />} />
