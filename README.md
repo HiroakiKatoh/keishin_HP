@@ -774,3 +774,17 @@ npm run lint
 - モダンなデザインとUXの向上
 - レスポンシブ対応の強化
 - 情報の整理と見やすさの改善
+
+### 2025年09月11日
+- **TOPページ（`src/components/HomePage.tsx`）**
+  - 代表メッセージの署名横の役職名を「代表取締役社長」から「代表取締役」に変更
+  - 会社概要セクションの「代表者：」を「代表取締役 金本 秀幸」に変更
+- **ヘッダーのロゴ差し替え**
+  - 全ページのヘッダー左上の青いマーク（`lucide-react`の`Building2`）を画像ロゴに変更
+  - 使用画像：`/public/images/top/keishin_logo.png`
+  - 対象ファイル：
+    - `src/components/HomePage.tsx`
+    - `src/components/LionPark.tsx`
+    - `src/components/ParkingEquipment.tsx`
+    - `src/components/EmergencySystem.tsx`
+    - `src/components/SurveillanceCamera.tsx`

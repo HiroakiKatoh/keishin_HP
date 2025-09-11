@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { 
-  Building2,
-  Menu,
-  X,
-  ChevronRight,
-  MapPin,
-  PhoneCall,
-  Mail
+	Menu,
+	X,
+	ChevronRight,
+	MapPin,
+	PhoneCall,
+	Mail
 } from 'lucide-react';
 import { sendContactEmail, ContactFormData } from '../api/contact';
 
@@ -166,7 +165,7 @@ const HomePage: React.FC<HomePageProps> = ({
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
-              <Building2 className="w-8 h-8 text-blue-400" />
+              <img src="/images/top/keishin_logo.png" alt="株式会社ケイシン ロゴ" className="w-8 h-8" />
               <h1 className="text-xl font-bold text-white">
                 株式会社ケイシン
               </h1>
@@ -381,7 +380,7 @@ const HomePage: React.FC<HomePageProps> = ({
                 <div className="text-slate-700 text-xl flex justify-end items-center space-x-4 font-handwriting">
                   <div className="text-right">
                     <div className="text-sm sm:text-base md:text-lg lg:text-xl">ケイシン株式会社</div>
-                    <div className="text-sm sm:text-base md:text-lg lg:text-xl">代表取締役社長</div>
+                    <div className="text-sm sm:text-base md:text-lg lg:text-xl">代表取締役</div>
                   </div>
                   <div>
                     <img 
@@ -407,7 +406,7 @@ const HomePage: React.FC<HomePageProps> = ({
                   </div>
                   <div className="flex flex-col sm:flex-row">
                     <span className="font-medium text-blue-400 text-xl sm:w-32 flex-shrink-0">代表者：</span>
-                    <span className="sm:ml-4">代表取締役社長 金本 秀幸</span>
+                    <span className="sm:ml-4">代表取締役 金本 秀幸</span>
                   </div>
                   <div className="flex flex-col sm:flex-row">
                     <span className="font-medium text-blue-400 text-xl sm:w-32 flex-shrink-0">設立：</span>
