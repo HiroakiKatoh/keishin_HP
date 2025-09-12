@@ -5,8 +5,7 @@ import {
 	X,
 	ChevronRight,
 	MapPin,
-	PhoneCall,
-	Mail
+	PhoneCall
 } from 'lucide-react';
 import { sendContactEmail, ContactFormData } from '../api/contact';
 
@@ -229,42 +228,76 @@ const HomePage: React.FC<HomePageProps> = ({
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen flex items-center justify-center relative overflow-hidden">
-        {/* Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        >
-          <source src="/videos/The-Car-Is-Parking.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        
-        {/* Overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent"></div>
-        
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
-            駐車場管理の
-            <br />
-            新しいスタンダード
-          </h2>
-          <p className="text-2xl md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
-            福岡での駐車場運営、土地活用ならケイシン
-          </p>
-          <div className="mt-8">
-            <button
-              onClick={() => scrollToSection('services')}
-              className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+      <section id="home" className="pt-16 min-h-screen relative overflow-hidden">
+        {/* Mobile: inline video with overlaid smaller text/button */}
+        <div className="block md:hidden">
+          <div className="relative w-full">
+            <video
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-auto object-contain"
             >
-              サービスを見る
-              <ChevronRight className="ml-2 w-5 h-5" />
-            </button>
+              <source src="/videos/The-Car-Is-Parking.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+              <div className="transform scale-[0.6] origin-center">
+                <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+                  駐車場管理の
+                  <br />
+                  新しいスタンダード
+                </h2>
+                <p className="text-sm mb-6 leading-relaxed bg-blue-600 text-white px-2 py-2 rounded-lg inline-block whitespace-nowrap">
+                  福岡での駐車場運営、土地活用ならケイシン
+                </p>
+                <button
+                  onClick={() => scrollToSection('services')}
+                  className="inline-flex items-center px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  サービスを見る
+                <ChevronRight className="ml-2 w-5 h-5" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
+
+        {/* Desktop/Tablet: background video with overlay text/button */}
+        <div className="hidden md:flex min-h-screen items-center justify-center relative">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/The-Car-Is-Parking.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div className="absolute inset-0 bg-gradient-to-r from-transparent to-transparent"></div>
+          <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+            <h2 className="text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+              駐車場管理の
+              <br />
+              新しいスタンダード
+            </h2>
+            <p className="text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
+              福岡での駐車場運営、土地活用ならケイシン
+            </p>
+            <div className="mt-8">
+              <button
+                onClick={() => scrollToSection('services')}
+                className="inline-flex items-center px-8 py-4 text-lg font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-full transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+              >
+                サービスを見る
+              <ChevronRight className="ml-2 w-5 h-5" />
+              </button>
+            </div>
+          </div>
+          <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-900 to-transparent"></div>
+        </div>
       </section>
 
       {/* Services Section */}
@@ -364,10 +397,10 @@ const HomePage: React.FC<HomePageProps> = ({
               <h4 className="text-2xl font-semibold mb-6 text-slate-800 text-center">代表メッセージ</h4>
               <div className="space-y-6 text-slate-700 text-xl leading-relaxed font-handwriting">
                 <p>
-                  拝啓　時下ますますご清栄のこととお慶び申し上げます。
+                  平素より格別のご支援を賜り、誠にありがとうございます。
                 </p>
                 <p>
-                  弊社は創業以来、誠実を旨に地域の皆さまに安心してご利用いただける駐車場運営に努めてまいりました。これもひとえに皆さまのご支援の賜物と深く感謝申し上げます。
+                  弊社は創業以来、「誠実」をモットーに地域の皆さまに安心してご利用いただける駐車場運営に努めてまいりました。これもひとえに皆さまのご支援の賜物と深く感謝申し上げます。
                 </p>
                 <p>
                   近年、駐車場業界を取り巻く環境は大きく変化しており、従来の機械式から、車両を自動で認識するカメラ型システムへの移行が進んでおります。弊社におきましても、時代の流れに即した利便性と安全性の向上を目指し、新しい設備導入を積極的に進めております。
@@ -781,10 +814,6 @@ const HomePage: React.FC<HomePageProps> = ({
                 <div className="flex items-center space-x-3">
                   <PhoneCall className="w-5 h-5 text-blue-400 text-xl" />
                   <span className="text-gray-300 text-xl">(092)632-6610</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Mail className="w-5 h-5 text-blue-400 text-xl" />
-                  <span className="text-gray-300 text-xl">info@keishin-p.jp</span>
                 </div>
               </div>
             </div>
