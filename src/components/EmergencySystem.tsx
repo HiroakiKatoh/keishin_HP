@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft, Phone, AlertTriangle } from 'lucide-react';
 
 const EmergencySystem = () => {
+  // ページ遷移時にスクロール位置をトップに設定
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const goBack = () => {
     window.history.back();
   };
@@ -68,7 +73,7 @@ const EmergencySystem = () => {
                     <img 
                       src="/images/services/phone/img01.png" 
                       alt="おまかせコールKS-55 mini 4G" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
@@ -107,7 +112,7 @@ const EmergencySystem = () => {
                     <img 
                       src="/images/services/phone/img02.png" 
                       alt="おまかせピッピKS-50 mini 4G" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
@@ -161,7 +166,7 @@ const EmergencySystem = () => {
                      <img 
                        src="/images/services/phone/img03.png" 
                        alt="おまかせコールEYE KS-100" 
-                       className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                       className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                      />
                    </div>
 
@@ -200,7 +205,7 @@ const EmergencySystem = () => {
                           <img 
                             src="/images/services/phone/img04.png" 
                             alt="おまかせコールEYE KS-100 システム構成" 
-                            className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                            className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                           />
                         </div>
                       </div>

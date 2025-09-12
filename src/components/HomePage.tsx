@@ -105,6 +105,11 @@ const HomePage: React.FC<HomePageProps> = ({
     }
   };
 
+  // ページ遷移時にスクロール位置をトップに設定
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const messageObserver = new IntersectionObserver(
       ([entry]) => {
@@ -228,7 +233,7 @@ const HomePage: React.FC<HomePageProps> = ({
       </header>
 
       {/* Hero Section */}
-      <section id="home" className="pt-16 min-h-screen relative overflow-hidden">
+      <section id="home" className="pt-16 relative overflow-hidden">
         {/* Mobile: inline video with overlaid smaller text/button */}
         <div className="block md:hidden">
           <div className="relative w-full">

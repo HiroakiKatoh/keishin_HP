@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft, Lock, CreditCard, Shield, Car, Settings, Package } from 'lucide-react';
 
 const ParkingEquipment = () => {
+  // ページ遷移時にスクロール位置をトップに設定
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const goBack = () => {
     window.history.back();
   };
@@ -40,7 +45,7 @@ const ParkingEquipment = () => {
               駐車場機器販売
             </h2>
             <p className="text-2xl md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
-              高品質な駐車場機器を提供
+              アフターフォロー万全の機器販売
             </p>
           </div>
 
@@ -63,7 +68,7 @@ const ParkingEquipment = () => {
                  <img 
                    src="/images/services/kiki/img1.png" 
                    alt="LOCK PLATE（新型ロックプレート）" 
-                   className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                   className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                  />
                </div>
 
@@ -134,7 +139,7 @@ const ParkingEquipment = () => {
                   <img 
                     src="/images/services/kiki/img5.png" 
                     alt="フラップ式精算システム機器" 
-                    className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                    className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                   />
                 </div>
 
@@ -197,7 +202,7 @@ const ParkingEquipment = () => {
                    <img 
                      src="/images/services/kiki/img6.png" 
                      alt="ゲート式精算システム機器（上段）" 
-                     className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                     className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                    />
                  </div>
                </div>
@@ -225,7 +230,7 @@ const ParkingEquipment = () => {
                    <img 
                      src="/images/services/kiki/img7.png" 
                      alt="ゲート式精算システム機器（下段）" 
-                     className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                     className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                    />
                  </div>
                </div>
@@ -290,7 +295,7 @@ const ParkingEquipment = () => {
                  <img 
                    src="/images/services/kiki/img8.jpg" 
                    alt="セキュリティゲートシステム" 
-                   className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                   className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                  />
                </div>
 

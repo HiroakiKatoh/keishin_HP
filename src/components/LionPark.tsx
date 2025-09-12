@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft, TrendingUp, Clock, DollarSign, Shield } from 'lucide-react';
 
 const LionPark = () => {
+  // ページ遷移時にスクロール位置をトップに設定
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const goBack = () => {
     window.history.back();
   };
@@ -228,7 +233,7 @@ const LionPark = () => {
                  <img 
                    src="/images/services/lion-park/img05.jpg" 
                    alt="駐車場業務の様子" 
-                   className="w-[864px] mx-auto h-[432px] object-contain rounded-xl"
+                   className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-xl"
                  />
                </div>
               
@@ -293,7 +298,7 @@ const LionPark = () => {
                                                                                      <img 
                                              src="/images/services/lion-park/img06.png" 
                                              alt="一括借上げ方式 短期借上げ方式➀の説明" 
-                                             className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                                             className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                                            />
                                         </div>
                    
@@ -329,7 +334,7 @@ const LionPark = () => {
                                            <img 
                         src="/images/services/lion-park/img07.png" 
                         alt="一括借上げ方式 短期借上げ方式➀の収支構造説明" 
-                        className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                        className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                       />
                    </div>
                 </div>
@@ -343,7 +348,7 @@ const LionPark = () => {
                                                                                    <img 
                                             src="/images/services/lion-park/img08.png" 
                                             alt="一括借上げ方式 短期借上げ方式➁の説明" 
-                                            className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                                            className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                                           />
                                        </div>
                    
@@ -376,10 +381,10 @@ const LionPark = () => {
                    
                    {/* 収支構造の説明画像 */}
                    <div className="mt-6 text-center">
-                     <img 
+                       <img 
                        src="/images/services/lion-park/img09.png" 
                        alt="一括借上げ方式 短期借上げ方式➁の収支構造説明" 
-                       className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                       className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                      />
                    </div>
                 </div>
@@ -393,7 +398,7 @@ const LionPark = () => {
                                                                                    <img 
                                             src="/images/services/lion-park/img10.png" 
                                             alt="管理受託方式の説明" 
-                                            className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                                            className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                                           />
                                        </div>
                    
@@ -424,7 +429,7 @@ const LionPark = () => {
                                            <img 
                         src="/images/services/lion-park/img11.png" 
                         alt="管理受託方式の収支構造説明" 
-                        className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                        className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                       />
                    </div>
                 </div>

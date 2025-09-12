@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft, Camera, Monitor } from 'lucide-react';
 
 const SurveillanceCamera = () => {
+  // ページ遷移時にスクロール位置をトップに設定
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const goBack = () => {
     window.history.back();
   };
@@ -68,7 +73,7 @@ const SurveillanceCamera = () => {
                     <img 
                       src="/images/services/camera/img01.jpg" 
                       alt="ワイドダイナミックカメラ" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
@@ -107,7 +112,7 @@ const SurveillanceCamera = () => {
                     <img 
                       src="/images/services/camera/img02.jpg" 
                       alt="ハウジング一体型カメラ（広角タイプ）" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
@@ -146,7 +151,7 @@ const SurveillanceCamera = () => {
                     <img 
                       src="/images/services/camera/img03.jpg" 
                       alt="高画質38万画素カラードームカメラ" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
@@ -206,7 +211,7 @@ const SurveillanceCamera = () => {
                     <img 
                       src="/images/services/camera/img04.jpg" 
                       alt="4chデジタルレコーダー" 
-                      className="w-[864px] mx-auto h-[432px] object-contain rounded-lg"
+                      className="w-full max-w-[864px] mx-auto h-auto md:h-[432px] object-contain rounded-lg"
                     />
                   </div>
 
