@@ -125,7 +125,7 @@ const ParkingEquipment = () => {
                     </div>
                     <div className="bg-slate-600/50 p-4 rounded-lg text-center">
                       <div className="text-blue-400 font-semibold text-xl mb-2">FT-4000</div>
-                      <div className="text-gray-300 text-xl">1～15車室用<br />フラップ式料金精算機</div>
+                      <div className="text-gray-300 text-xl">1～30車室用<br />フラップ式料金精算機</div>
                     </div>
                     <div className="bg-slate-600/50 p-4 rounded-lg text-center">
                       <div className="text-blue-400 font-semibold text-xl mb-2">KSP-501</div>
@@ -331,7 +331,7 @@ const ParkingEquipment = () => {
                  </div>
                  <h3 className="text-4xl font-bold mb-4 text-white">車路管制システム</h3>
                  <p className="text-xl text-gray-300 leading-relaxed">
-                   駐車場内の安全確保は最も大切なポイントです。利用者に効率と快適性を、オーナーにも安心と信頼を与えます。
+                   駐車場内の安全確保は最も大切なポイントです。利用者に効率と快適性を、オーナー様にも安心と信頼を与えます。
                  </p>
                </div>
                

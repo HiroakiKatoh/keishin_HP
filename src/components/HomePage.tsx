@@ -417,7 +417,7 @@ const HomePage: React.FC<HomePageProps> = ({
               <div className="mt-8">
                 <div className="text-slate-700 text-xl flex justify-end items-center space-x-4 font-handwriting">
                   <div className="text-right">
-                    <div className="text-sm sm:text-base md:text-lg lg:text-xl">ケイシン株式会社</div>
+                    <div className="text-sm sm:text-base md:text-lg lg:text-xl">株式会社ケイシン</div>
                     <div className="text-sm sm:text-base md:text-lg lg:text-xl">代表取締役</div>
                   </div>
                   <div>
