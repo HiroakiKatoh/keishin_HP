@@ -41,10 +41,10 @@ const SurveillanceCamera = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
               監視カメラ
             </h2>
-            <p className="text-2xl md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
+            <p className="text-base sm:text-lg md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-4 sm:px-6 py-3 rounded-lg inline-block">
               高品質な監視システムで安心・安全を提供
             </p>
           </div>

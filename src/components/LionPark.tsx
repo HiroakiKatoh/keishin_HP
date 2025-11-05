@@ -34,12 +34,13 @@ const LionPark = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Main Title and Subtitle */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
               土地活用でお悩みなら、<br />
               安心のライオンパークへ!
             </h2>
-            <p className="text-2xl md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
-              ライオンパークは、株式会社ケイシンのブランドです。
+            <p className="text-base sm:text-lg md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-4 sm:px-6 py-3 rounded-lg inline-block">
+              ライオンパークは、<br className="md:hidden" />
+              株式会社ケイシンのブランドです。
             </p>
           </div>
 
@@ -97,7 +98,7 @@ const LionPark = () => {
               
                              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                  <div className="space-y-6">
-                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 h-96 flex flex-col">
+                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 md:h-96 flex flex-col">
                      <div className="mb-4 flex-shrink-0">
                        <img 
                          src="/images/services/lion-park/img01.jpg" 
@@ -113,7 +114,7 @@ const LionPark = () => {
                       </div>
                    </div>
                    
-                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 h-96 flex flex-col">
+                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 md:h-96 flex flex-col">
                      <div className="mb-4 flex-shrink-0">
                        <img 
                          src="/images/services/lion-park/img02.jpg" 
@@ -134,7 +135,7 @@ const LionPark = () => {
                  </div>
                  
                  <div className="space-y-6">
-                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 h-96 flex flex-col">
+                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 md:h-96 flex flex-col">
                      <div className="mb-4 flex-shrink-0">
                        <img 
                          src="/images/services/lion-park/img03.jpg" 
@@ -150,7 +151,7 @@ const LionPark = () => {
                       </div>
                    </div>
                    
-                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 h-96 flex flex-col">
+                   <div className="bg-slate-700/50 p-6 rounded-xl border border-slate-600 md:h-96 flex flex-col">
                      <div className="mb-4 flex-shrink-0">
                        <img 
                          src="/images/services/lion-park/img04.jpg" 

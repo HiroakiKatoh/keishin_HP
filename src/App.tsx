@@ -55,7 +55,7 @@ const App = () => {
   const services = [
     {
       icon: <Car className="w-8 h-8" />,
-      title: "LIONパーク（駐車場運営管理）",
+      title: "ライオンパーク（駐車場運営管理）",
       description: "オーナーから土地又は既存駐車場（平面・ビル、立体｛自走・タワー・多段｝）を一括でお借りし当社が駐車管理機器・看板等を設置し、運営します。",
       path: "/lion-park"
     },

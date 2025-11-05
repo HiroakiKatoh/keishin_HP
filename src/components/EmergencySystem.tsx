@@ -41,10 +41,10 @@ const EmergencySystem = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Main Title */}
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+            <h2 className="text-2xl sm:text-3xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
               緊急通報システム
             </h2>
-            <p className="text-2xl md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-6 py-3 rounded-lg inline-block">
+            <p className="text-base sm:text-lg md:text-3xl mb-8 leading-relaxed bg-blue-600 text-white px-4 sm:px-6 py-3 rounded-lg inline-block">
               安心・安全な緊急時対応システムを提供
             </p>
           </div>
@@ -224,11 +224,11 @@ const EmergencySystem = () => {
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">接続インターフェイス</div>
-                            <div className="text-gray-300 text-base">インターホン×1、リレー接点×2、外部入力接点×7、LAN端子×6</div>
+                            <div className="text-gray-300 text-base break-words">インターホン×1、リレー接点×2、外部入力接点×7、LAN端子×6</div>
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">接続ポート</div>
-                            <div className="text-gray-300 text-base">プッシュ式端子台、RJ45（ネットワークカメラ用）</div>
+                            <div className="text-gray-300 text-base break-words">プッシュ式端子台、RJ45（ネットワークカメラ用）</div>
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">呼制御プロトコル</div>
@@ -236,7 +236,7 @@ const EmergencySystem = () => {
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">対応プロトコル</div>
-                            <div className="text-gray-300 text-base">TCP,UDP,HTTP,HTTPS,RTSP,RTP,RTP/RTCP,FTP,SMTP,DHCP,DNS,DDNS,NTP</div>
+                            <div className="text-gray-300 text-base break-words">TCP,UDP,HTTP,HTTPS,RTSP,RTP,RTP/RTCP,FTP,SMTP,DHCP,DNS,DDNS,NTP</div>
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">使用電源</div>
@@ -256,7 +256,7 @@ const EmergencySystem = () => {
                           </div>
                           <div className="bg-slate-700/50 p-4 rounded-lg">
                             <div className="text-blue-400 font-semibold text-lg mb-2">環境条件</div>
-                            <div className="text-gray-300 text-base">本体：-5～60℃、Wifi：5～35℃、LAN：0～40℃</div>
+                            <div className="text-gray-300 text-base break-words">本体：-5～60℃、Wifi：5～35℃、LAN：0～40℃</div>
                           </div>
                         </div>
                       </div>

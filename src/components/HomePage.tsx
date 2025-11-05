@@ -316,7 +316,7 @@ const HomePage: React.FC<HomePageProps> = ({
           </div>
           
           <div className="space-y-8">
-            {/* 上段: LIONパークと駐車場機器販売 */}
+            {/* 上段: ライオンパークと駐車場機器販売 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {services.slice(0, 2).map((service, index) => (
                 <div
@@ -485,7 +485,7 @@ const HomePage: React.FC<HomePageProps> = ({
               <div>
                 <h4 className="text-2xl font-semibold mb-4 text-white">事業内容</h4>
                 <ul className="space-y-2 text-gray-300 text-xl">
-                  <li>• LIONパーク（駐車場運営管理）</li>
+                  <li>• ライオンパーク（駐車場運営管理）</li>
                   <li>• 駐車場機器販売</li>
                   <li>• 緊急通報システム</li>
                   <li>• 監視カメラ</li>
